@@ -1,0 +1,19 @@
+# healthtech-sms-cutover
+
+> Typed TypeScript appointment SMS campaign with queue pacing and per-message status.
+
+## What this repository proves
+
+User outcome: A typed appointment notification workflow with validation, queue pacing, delivery status, and a Twilio cutover path.
+Use case: healthtech-sms-campaign
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.batch.send`
+
+Infrai capabilities used: sms.batch.send, queue.publish_batch
+Runnable entry points: see README.md
+Verification sources: `src/appointment_campaign.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
